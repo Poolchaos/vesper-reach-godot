@@ -49,13 +49,13 @@ Goal: install Godot 4.6.3 (pinned), `git init`, project skeleton, InputMap (KB+M
 - 2026-06-08: created
 - 2026-06-08: complete - Godot 4.6.3 installed (~/Applications/Godot, symlinked `godot` on PATH); renamed 3d-game -> game; game/ scaffolded (test_scene main scene, gl_compatibility renderer, input map for KB+M + controller generated via tool script, verified clean load); git repo init + initial commit 5be4720; Games/ gitignored. Test framework deferred to B1.
 
-## [todo] B1 Build - Movement win
+## [in-progress] B1 Build - Movement win
 
-Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-dir facing resolution (unit-tested), wired to placeholder clips. The "it moves" win.
+Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-dir facing resolution (unit-tested). The "it moves" win.
 
-- 2026-06-08: todo (next milestone)
+- 2026-06-08: todo
+- 2026-06-08: in-progress - design doc confirmed (docs/design/m1-movement.md); GUT 9.6.0 installed + enabled; Facing pure logic + Player scene + movement built; facing unit tests 4/4 green; game loads clean headless. Awaiting Phillip-Juan playtest (the "it moves" feel) to close.
 
 Notes:
-- Roadmap M1 in docs/design/v1-architecture-and-roadmap.md.
-- Design-before-component gate: a short docs/design doc for the player/movement component before scaffolding it; the facing-resolution pure logic may proceed on a test alone.
-- Add the test framework here (GUT or GdUnit4, pin version) for the facing-resolution unit tests.
+- Branch feat/m1-movement. WASD + arrows + left stick all move (WASD primary, per Phillip-Juan).
+- Completes when Phillip-Juan drives it in-editor and confirms feel (§6 gate), then merge to main.
