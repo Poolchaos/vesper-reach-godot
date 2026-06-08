@@ -3,6 +3,8 @@
 Append-only. Newest first. One line per entry.
 
 ## 2026-06-08
+- 2026-06-08 - Renamed reference folder Games/ -> legacy/; updated all forward-looking path references (CLAUDE.md, conventions.md, INDEX.md, .gitignore, memory) to match. Verified human.png resolves at legacy/vesper-reach/src/assets/characters/races/.
+- 2026-06-08 - Build M0 COMPLETE: installed Godot 4.6.3 (~/Applications/Godot, symlink `godot` on PATH); renamed 3d-game -> game; scaffolded game/ Godot project (test_scene main scene, gl_compatibility renderer, KB+M + controller input map via tool script, verified clean headless load); git init + initial commit 5be4720; Games/ gitignored. Next: M1 (movement win).
 - 2026-06-08 - Phase 5 LOCKED + PLANNING COMPLETE: v1 Godot architecture, movement-first roadmap M0-M7 (readability spike kept at M2), risk register. docs/design/v1-architecture-and-roadmap.md. Next action = M0 (install Godot, git init, project setup) on Phillip-Juan's go.
 - 2026-06-08 - Phase 4 LOCKED: 6-step animation learning path (cutout -> rig -> idle -> walk -> attack -> generalize), learn in-project, on Godot built-in bones. See docs/design/animation-learning-path.md. Advanced to Phase 5 (Architecture & roadmap).
 - 2026-06-08 - Phase 3 LOCKED: engine = Godot 4 (stable 4.6.3, GDScript), free built-in 2D bones; Spine deferred (no paid tools now). ADR-0001 signed off; engine gate cleared (code still paused until planning done). Web stack + Defold + Unity rejected. CLAUDE.md updated to reflect the locks. Advanced to Phase 4 (Animation learning path).

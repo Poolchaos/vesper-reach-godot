@@ -1,5 +1,5 @@
-# The old Vesper Reach web projects - inherited world/art reference only, not part of this repo
-Games/
+# The old Vesper Reach web projects (legacy/) - inherited world/art reference only, not part of this repo
+legacy/
 
 # Godot 4 engine cache and per-machine imports
 game/.godot/

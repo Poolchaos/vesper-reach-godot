@@ -42,9 +42,20 @@ Goal: v1 slice architecture (Godot scenes/systems), milestone build order by dep
 - 2026-06-08: in-progress (architecture + roadmap + risks presented)
 - 2026-06-08: complete - LOCKED. Movement-first roadmap (M0-M7), architecture + risk register in docs/design/v1-architecture-and-roadmap.md. Planning track complete.
 
-## [blocked] B0 Build - Setup (Godot project)
+## [complete] B0 Build - Setup (Godot project)
 
-Goal: install Godot 4.6.3 (pinned), `git init`, project skeleton, InputMap (KB+M + controller), empty TestScene, test framework. First build milestone.
+Goal: install Godot 4.6.3 (pinned), `git init`, project skeleton, InputMap (KB+M + controller), empty TestScene.
 
 - 2026-06-08: created
-- 2026-06-08: blocked - planning complete; starts on Phillip-Juan's "start building" go. Full build roadmap (M0-M7) in docs/design/v1-architecture-and-roadmap.md.
+- 2026-06-08: complete - Godot 4.6.3 installed (~/Applications/Godot, symlinked `godot` on PATH); renamed 3d-game -> game; game/ scaffolded (test_scene main scene, gl_compatibility renderer, input map for KB+M + controller generated via tool script, verified clean load); git repo init + initial commit 5be4720; Games/ gitignored. Test framework deferred to B1.
+
+## [todo] B1 Build - Movement win
+
+Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-dir facing resolution (unit-tested), wired to placeholder clips. The "it moves" win.
+
+- 2026-06-08: todo (next milestone)
+
+Notes:
+- Roadmap M1 in docs/design/v1-architecture-and-roadmap.md.
+- Design-before-component gate: a short docs/design doc for the player/movement component before scaffolding it; the facing-resolution pure logic may proceed on a test alone.
+- Add the test framework here (GUT or GdUnit4, pin version) for the facing-resolution unit tests.

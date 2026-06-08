@@ -21,8 +21,8 @@ Vesper reach/
 │   ├── assets/               (per-character/per-set asset specs: <set-kebab>.md)
 │   └── animation/            (animation references, GIFs, frame studies)
 ├── reference/                (screenshots, GIFs, mood boards; date-prefixed: YYYY-MM-DD_label.ext)
-├── Games/                    (INHERITED reference only - the old Vesper Reach web projects)
-└── src/                      (created when the engine decision lands)
+├── legacy/                   (INHERITED reference only - the old Vesper Reach web projects; gitignored)
+└── game/                     (the Godot 4 project: project.godot, scenes/, scripts/, assets/, tests/)
 ```
 
 Naming: ADRs `ADR-NNNN-kebab-topic.md` (sequential, never edited after sign-off, supersede with a new ADR); design docs `docs/design/<feature-kebab>.md`; asset specs `docs/assets/<set-kebab>.md`; references date-prefixed.

@@ -13,12 +13,12 @@ A **2D top-down RPG** in a **chibi** art style: you move, fight, and interact wi
 
 ## The Vesper Reach world (inherited)
 
-This game renders the world of Phillip-Juan's previous **Vesper Reach** project as a playable chibi top-down RPG. That world is **inherited on purpose** - races, callings, awakening, lore, and the painted chibi art direction carry over. The old web codebases live at `Games/vesper-reach/` (Aurelia v0.0.1) and `Games/vesper-reach-react/` (React v0.0.2) inside this directory; treat them as a **world/lore/art reference, not a code source**. Do not port their web code into this game; do reuse their world canon and visual identity.
+This game renders the world of Phillip-Juan's previous **Vesper Reach** project as a playable chibi top-down RPG. That world is **inherited on purpose** - races, callings, awakening, lore, and the painted chibi art direction carry over. The old web codebases live at `legacy/vesper-reach/` (Aurelia v0.0.1) and `legacy/vesper-reach-react/` (React v0.0.2) inside this directory; treat them as a **world/lore/art reference, not a code source**. Do not port their web code into this game; do reuse their world canon and visual identity.
 
 World canon for this game (per Phillip-Juan, narrowed from the old project):
 - **3 playable races:** Human, Aquarian, Florakin.
 - **2 callings per race**, plus a **rare awakening** a character can unlock.
-- The old project carried ~10 race concepts and many more classes; those are not this game's canon. Old reference PNGs (10 races) sit at `Games/vesper-reach/src/assets/characters/races/` if ever wanted, but only Human/Aquarian/Florakin are in scope here.
+- The old project carried ~10 race concepts and many more classes; those are not this game's canon. Old reference PNGs (10 races) sit at `legacy/vesper-reach/src/assets/characters/races/` if ever wanted, but only Human/Aquarian/Florakin are in scope here.
 
 ## v1 scope (locked direction)
 
@@ -26,7 +26,7 @@ v1 is **Human race only** and the **smallest playable, animated slice**: one chi
 
 ## Locked aesthetic
 
-Inherits the Vesper Reach visual identity. **Locked:** chibi proportions (large head, ~1:2 head-to-body), painted soft cel-shading with visible material texture, soft/warm palette (no neon), transparent or implied-depth backgrounds for character art. Reference: `Games/vesper-reach/src/assets/characters/races/human.png` (the v1 character look; a static painted portrait, the animated sprite derives from it).
+Inherits the Vesper Reach visual identity. **Locked:** chibi proportions (large head, ~1:2 head-to-body), painted soft cel-shading with visible material texture, soft/warm palette (no neon), transparent or implied-depth backgrounds for character art. Reference: `legacy/vesper-reach/src/assets/characters/races/human.png` (the v1 character look; a static painted portrait, the animated sprite derives from it).
 
 **This is NOT:** pixel art, AAA realism, anime hyper-detail, or low-poly placeholder. Style is "hand-painted chibi storybook."
 
@@ -75,7 +75,7 @@ Planning happens **before** work, one phase at a time. **Do not advance until Ph
 
 ## Gates (do not skip)
 
-- **Engine gate.** CLEARED 2026-06-08: ADR-0001 signed off (Godot 4). Engine-specific work is unlocked, but stays paused until the remaining planning phases (4-5) finish and Phillip-Juan says to start building.
+- **Engine gate.** Cleared (ADR-0001, Godot 4). Build underway: the `game/` Godot 4.6.3 project is scaffolded (M0 complete). Milestones follow [docs/design/v1-architecture-and-roadmap.md](docs/design/v1-architecture-and-roadmap.md).
 - **Asset-spec-before-animation gate.** No animation code against an asset without a spec at `docs/assets/<set>.md` (source format/tool, pivot, frame size, scale, animation list with frame counts + loop/once/hold, hitbox/hurtbox if combat-relevant, file naming).
 - **Design-before-component gate.** No gameplay components, UI, or scenes scaffolded until `docs/design/<feature>.md` exists and is confirmed. Self-evident pure-logic libraries may proceed on a test alone.
 - **Documentation gate.** Every non-trivial decision lands in `decisions/ADR-NNNN-<topic>.md` in the same shipping unit. One ADR per decision, sequential, never edited after sign-off (supersede with a new ADR).
@@ -96,7 +96,7 @@ Planning happens **before** work, one phase at a time. **Do not advance until Ph
 
 ## Code style
 
-Engine is Godot 4 / GDScript: formatter `gdformat`, linter `gdlint` (gdtoolkit). No source exists yet (still in planning). Universal rules: match surrounding style; no commented-out code; no change-justification comments; default to no comments (only a non-obvious WHY); **no emojis** in code or game-facing strings; **no em dash (`—`) anywhere** in this workspace (use `.` or `-`; convert any you touch); magic numbers get names (`const ATTACK_RECOVERY_FRAMES = 8`); no back-compat hacks or dead-code re-exports; validate only at real boundaries; naming - states `snake_case`, components `PascalCase`, assets `kebab-case`. Full conventions, the 13-step change workflow, commit hygiene, and (if a web stack wins) npm dependency-safety rules: see [docs/conventions.md](docs/conventions.md).
+Engine is Godot 4 / GDScript: formatter `gdformat`, linter `gdlint` (gdtoolkit). The Godot project lives in `game/` (scaffolded at M0). Godot binary: `~/Applications/Godot/Godot_v4.6.3-stable_linux.x86_64`, symlinked to `godot` on PATH. Universal rules: match surrounding style; no commented-out code; no change-justification comments; default to no comments (only a non-obvious WHY); **no emojis** in code or game-facing strings; **no em dash (`—`) anywhere** in this workspace (use `.` or `-`; convert any you touch); magic numbers get names (`const ATTACK_RECOVERY_FRAMES = 8`); no back-compat hacks or dead-code re-exports; validate only at real boundaries; naming - states `snake_case`, components `PascalCase`, assets `kebab-case`. Full conventions, the 13-step change workflow, commit hygiene, and (if a web stack wins) npm dependency-safety rules: see [docs/conventions.md](docs/conventions.md).
 
 ## Project state tracking
 
