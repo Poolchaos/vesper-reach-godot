@@ -49,13 +49,21 @@ Goal: install Godot 4.6.3 (pinned), `git init`, project skeleton, InputMap (KB+M
 - 2026-06-08: created
 - 2026-06-08: complete - Godot 4.6.3 installed (~/Applications/Godot, symlinked `godot` on PATH); renamed 3d-game -> game; game/ scaffolded (test_scene main scene, gl_compatibility renderer, input map for KB+M + controller generated via tool script, verified clean load); git repo init + initial commit 5be4720; Games/ gitignored. Test framework deferred to B1.
 
-## [todo] B1 Build - Movement win
+## [complete] B1 Build - Movement win
 
-Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-dir facing resolution (unit-tested), wired to placeholder clips. The "it moves" win.
+Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-dir facing resolution (unit-tested). The "it moves" win.
 
-- 2026-06-08: todo (next milestone)
+- 2026-06-08: todo
+- 2026-06-08: in-progress - design doc confirmed; GUT 9.6.0 installed; Facing logic + Player + movement built; facing tests 4/4 green.
+- 2026-06-08: complete - Phillip-Juan verified movement reads on screen (after the background-grid fix). SPEED=220 accepted. Commits 3ee13d3 + 4314aaf, merged to main.
+
+## [todo] B2 Build - Readability spike (M2)
+
+Goal: cut human.png into rig parts, build the Skeleton2D rig, and get a convincing idle on the hardest facing (front/down). De-risks top-down cutout (the #1 project risk).
+
+- 2026-06-08: todo (next)
 
 Notes:
-- Roadmap M1 in docs/design/v1-architecture-and-roadmap.md.
-- Design-before-component gate: a short docs/design doc for the player/movement component before scaffolding it; the facing-resolution pure logic may proceed on a test alone.
-- Add the test framework here (GUT or GdUnit4, pin version) for the facing-resolution unit tests.
+- Asset-spec gate: write docs/assets/human-cutout.md before any rig/animation work.
+- Needs human.png cut into separate part images (art task) - decide approach with Phillip-Juan (manual GIMP/Krita, AI-generated parts, or a programmatic slice).
+- Learning steps 0-2 (docs/design/animation-learning-path.md).
