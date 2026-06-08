@@ -1,0 +1,14 @@
+# The old Vesper Reach web projects - inherited world/art reference only, not part of this repo
+Games/
+
+# Godot 4 engine cache and per-machine imports
+game/.godot/
+game/android/
+
+# Exported builds
+/builds/
+
+# OS / editor junk
+.DS_Store
+*~
+*.swp
