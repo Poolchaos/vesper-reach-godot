@@ -3,6 +3,9 @@
 Append-only. Newest first. One line per entry.
 
 ## 2026-06-08
+- 2026-06-08 - M0 user-verified: Phillip-Juan opened the editor (Godot 4.6.3.stable, Compatibility renderer, TestScene root) - §6 gate cleared, M0 genuinely done.
+- 2026-06-08 - Added Godot best practices (performance, memory/leak avoidance, signals, autoloads, React mental model) to CLAUDE.md + docs/godot-practices.md; grounded in current Godot docs/community.
+- 2026-06-08 - Leanness pass: moved the spent co-planning protocol detail to docs/co-planning-protocol.md, leaving a pointer + locked-status summary in CLAUDE.md (CLAUDE.md stays the lean always-loaded file; depth lives in referenced docs).
 - 2026-06-08 - Renamed reference folder Games/ -> legacy/; updated all forward-looking path references (CLAUDE.md, conventions.md, INDEX.md, .gitignore, memory) to match. Verified human.png resolves at legacy/vesper-reach/src/assets/characters/races/.
 - 2026-06-08 - Build M0 COMPLETE: installed Godot 4.6.3 (~/Applications/Godot, symlink `godot` on PATH); renamed 3d-game -> game; scaffolded game/ Godot project (test_scene main scene, gl_compatibility renderer, KB+M + controller input map via tool script, verified clean headless load); git init + initial commit 5be4720; Games/ gitignored. Next: M1 (movement win).
 - 2026-06-08 - Phase 5 LOCKED + PLANNING COMPLETE: v1 Godot architecture, movement-first roadmap M0-M7 (readability spike kept at M2), risk register. docs/design/v1-architecture-and-roadmap.md. Next action = M0 (install Godot, git init, project setup) on Phillip-Juan's go.

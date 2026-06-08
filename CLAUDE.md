@@ -50,28 +50,11 @@ Anchors: inspect before building (no code against an unopened file, no asset ref
 8. **Scope discipline.** Small-and-deep beats broad-and-shallow. If a category lists more than 3 items (characters, animations, scenes, abilities, etc.), stop and re-justify against the smallest playable version. Name scope inflation when you see it.
 9. **Ship features the user can reach.** Not shipped because code/asset exists. The animation must be triggerable in normal play or a documented test scene, the character selectable, the state machine wired into the loop.
 
-## Co-planning protocol (until the v1 slice ships)
+## Planning
 
-Planning happens **before** work, one phase at a time. **Do not advance until Phillip-Juan explicitly locks the current phase** ("lock it" / "confirmed" / "next"). Do not bundle phases.
+All 5 planning phases are **locked** (concept/scope, animation approach, engine/tooling, learning path, architecture/roadmap): see [decisions/README.md](decisions/README.md) and [docs/design/](docs/design/). Build is underway against [docs/design/v1-architecture-and-roadmap.md](docs/design/v1-architecture-and-roadmap.md).
 
-**Phase plan (this project's actual track):**
-1. **Concept & v1 scope** - pin the smallest slice that is both a real game and a real animation lesson; name deferrals.
-2. **Animation approach** - spritesheet vs skeletal/cutout for chibi top-down; facing strategy (4/8-dir) and its cost; reusable rigs + swappable parts for the later race/calling roster. Locked in an ADR.
-3. **Engine & tooling** - PC/Steam-first: native desktop export, controller support, clean Steam path. Honestly compare web-wrapped-for-desktop (Electron, which Phillip-Juan has shipped to Steam before, or Tauri) against a dedicated 2D engine with native Steam export + skeletal animation, **on equal footing**. Name the specific animation tool for the chosen approach. Locked in ADR-0001.
-4. **Animation learning path** - deliberate progression: rig one chibi human -> idle -> walk -> attack -> generalize. What is learned at each step and how to know it is right.
-5. **Architecture & roadmap** - v1 slice architecture, milestone build order by dependency, top risks + what to tackle first.
-
-**Per-turn structure:** each phase opens with a **candidate-variants turn** (2-4 distinct directions in a comparison table; Phillip-Juan picks or specifies a hybrid). After he picks, locked turns use:
-
-```
-<session_state>  Current phase; locked decisions carried forward; this phase's status.
-<recommendation> Committed, specific, defensible position. No hedging.
-<rationale>      Why, grounded in design principles or verified engine/market facts. Flag weak grounding.
-<trade_offs>     What is given up; what the alternative offered. Honest.
-<open_questions> 1-3 max (prefer 1). If none: "No open questions. Confirm to lock and advance to [next]."
-```
-
-**Gating rules:** explicit lock before a new phase; max 3 questions/turn (prefer 1); answer out-of-phase questions only if they unblock the current one, else defer; do not capitulate on pushback without a substantive counter-argument (and state what changed your mind); if new info contradicts a locked decision, surface it immediately rather than silently revising. Candidates and locks are recorded in `decisions/` (ADRs). Check the ADR index before re-asking a settled question.
+If a new planning effort is ever needed (a new feature, the later races/callings), use the co-planning discipline: one phase at a time, explicit lock before advancing, a candidate-variants turn then a committed recommendation, max 3 questions/turn, record in an ADR. Full protocol: [docs/co-planning-protocol.md](docs/co-planning-protocol.md).
 
 ## Gates (do not skip)
 
@@ -93,6 +76,15 @@ Planning happens **before** work, one phase at a time. **Do not advance until Ph
 ## Performance discipline
 
 60 FPS desktop is the locked target (16.6 ms/frame; changes go in an ADR and re-derive budgets). Profile before optimising and after every non-trivial system lands; record the frame-budget delta in the system's design doc. A feature that drops the target frame rate on the target machine is not done.
+
+## Godot practices
+
+Mental model (from React): a scene (`.tscn`) + script is a component, the node tree is the component tree, `_ready()` is mount, signals are events up, an autoload is a global store. Give reusable scripts a `class_name`. Full detail, examples, and the leak-debug procedure: [docs/godot-practices.md](docs/godot-practices.md).
+
+- **Performance:** statically type hot code (`_process`/`_physics_process`, loops, math) - typed GDScript is ~30-60% faster there by skipping Variant dispatch; skip typing one-off UI callbacks. `_physics_process` for movement, `_process` for visuals; keep both light, cache nodes with `@onready`, no per-frame allocations or `get_node()` in loops. Profile before optimising.
+- **Memory + leaks (watch on this machine):** RefCounted/Resources self-free; **Nodes you free** with `queue_free()`. A forgotten free in a spawn loop leaks thousands of **orphan nodes**. When any spawn/free system lands, watch Debug > Monitors > Object > Orphan Nodes across a play session and call `print_orphan_nodes()`; guard possibly-freed refs with `is_instance_valid()`.
+- **Signals:** declare, `emit`, and `connect` in `_ready()` using the typed form `node.sig.connect(_on_sig)` (not strings). Disconnect in `_exit_tree()` (or `CONNECT_ONE_SHOT`); avoid lambda connections (a new `Callable` each time, cannot disconnect, captures `self`). Signals wired to autoloads/long-lived objects are the top leak source - always disconnect.
+- **Autoloads:** only for genuinely cross-scene state/managers; not a true singleton and the most overused feature - prefer passing a reference or a scene-scoped node, and notify via signals.
 
 ## Code style
 

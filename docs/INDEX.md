@@ -6,6 +6,8 @@
 ## Where to find things
 - Operating rules: [CLAUDE.md](../CLAUDE.md)
 - Full conventions / workflow / commit hygiene: [conventions.md](conventions.md)
+- Godot coding practices (performance / memory / leaks / signals): [godot-practices.md](godot-practices.md)
+- Co-planning protocol (reuse for future planning): [co-planning-protocol.md](co-planning-protocol.md)
 - Decisions (ADRs): [../decisions/README.md](../decisions/README.md)
 - Work log: [PROGRESS.md](PROGRESS.md)
 - Active sprint queue: [SPRINT.md](SPRINT.md)
