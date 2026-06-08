@@ -3,6 +3,7 @@
 Append-only. Newest first. One line per entry.
 
 ## 2026-06-08
+- 2026-06-08 - B1/M1 COMPLETE: Phillip-Juan verified the player moves on screen (after the background-grid fix, commit 4314aaf). Merged feat/m1-movement to main. WASD/arrow/stick movement + 4-dir facing + GUT tests live. Next: M2 readability spike (rig + idle).
 - 2026-06-08 - M1 build (branch feat/m1-movement): installed GUT 9.6.0; added Facing pure-logic helper (scripts/facing.gd) with 4/4 passing unit tests; built Player (CharacterBody2D, placeholder shapes, Camera2D) with WASD/arrow/stick movement + 4-dir facing marker; instanced into test_scene; game loads clean headless. Awaiting Phillip-Juan playtest to close B1.
 - 2026-06-08 - M0 user-verified: Phillip-Juan opened the editor (Godot 4.6.3.stable, Compatibility renderer, TestScene root) - §6 gate cleared, M0 genuinely done.
 - 2026-06-08 - Added Godot best practices (performance, memory/leak avoidance, signals, autoloads, React mental model) to CLAUDE.md + docs/godot-practices.md; grounded in current Godot docs/community.
