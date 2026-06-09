@@ -1,10 +1,10 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" path="res://scripts/character_rig.gd" id="1_ggvnm"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_right.png" id="2_8ahhj"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_right.png" id="3_m6q61"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_right.png" id="4_c1uqr"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_right.png" id="5_1l3yo"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_right.png" id="2_8ahhj"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_right.png" id="3_m6q61"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_right.png" id="4_c1uqr"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_right.png" id="5_1l3yo"]
 [ext_resource type="Texture2D" path="res://assets/characters/human/down/torso.png" id="6_p7ucn"]
 [ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_left.png" id="7_boeah"]
 [ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_left.png" id="8_fvh67"]
@@ -338,58 +338,58 @@ _data = {
 &"walk": SubResource("Animation_ospmc")
 }
 
-[node name="CharacterRig" type="Node2D" unique_id=2059461086]
+[node name="CharacterRig" type="Node2D" unique_id=1179607744]
 scale = Vector2(0.14, 0.14)
 script = ExtResource("1_ggvnm")
 
-[node name="ThighRight" type="Sprite2D" parent="." unique_id=339832841]
-position = Vector2(61, -402)
-texture = ExtResource("2_8ahhj")
-offset = Vector2(0, 93)
-
-[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=1922675758]
-position = Vector2(0, 162)
-texture = ExtResource("3_m6q61")
-offset = Vector2(0, 99)
-
-[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=1692215173]
+[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=438896694]
 position = Vector2(133, -641)
-texture = ExtResource("4_c1uqr")
+texture = ExtResource("2_8ahhj")
 offset = Vector2(0, 80)
 
-[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=1027253189]
+[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=279545144]
 position = Vector2(5, 126)
-texture = ExtResource("5_1l3yo")
+texture = ExtResource("3_m6q61")
 offset = Vector2(0, 113)
 
-[node name="Torso" type="Sprite2D" parent="." unique_id=239628385]
+[node name="ThighRight" type="Sprite2D" parent="." unique_id=412094298]
+position = Vector2(61, -402)
+texture = ExtResource("4_c1uqr")
+offset = Vector2(0, 93)
+
+[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=2012404235]
+position = Vector2(0, 162)
+texture = ExtResource("5_1l3yo")
+offset = Vector2(0, 99)
+
+[node name="Torso" type="Sprite2D" parent="." unique_id=647164508]
 position = Vector2(0, -502)
 texture = ExtResource("6_p7ucn")
 
-[node name="ThighLeft" type="Sprite2D" parent="." unique_id=2079502047]
+[node name="ThighLeft" type="Sprite2D" parent="." unique_id=163662601]
 position = Vector2(-61, -402)
 texture = ExtResource("7_boeah")
-offset = Vector2(0, 93)
+offset = Vector2(0, 94)
 
-[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=102903750]
+[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=1923504215]
 position = Vector2(0, 162)
 texture = ExtResource("8_fvh67")
 offset = Vector2(0, 99)
 
-[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=1576200898]
+[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=162415838]
 position = Vector2(-132, -641)
 texture = ExtResource("9_3nxt1")
 offset = Vector2(0, 80)
 
-[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=1052987172]
+[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=509029429]
 position = Vector2(-6, 126)
 texture = ExtResource("10_iuy35")
 offset = Vector2(0, 113)
 
-[node name="Head" type="Sprite2D" parent="." unique_id=1185228772]
+[node name="Head" type="Sprite2D" parent="." unique_id=233407020]
 position = Vector2(0, -601)
 texture = ExtResource("11_u8060")
 offset = Vector2(0, -173)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=88742181]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1840159243]
 libraries/ = SubResource("AnimationLibrary_0leuh")
