@@ -57,7 +57,7 @@ Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-d
 - 2026-06-08: in-progress - design doc confirmed; GUT 9.6.0 installed; Facing logic + Player + movement built; facing tests 4/4 green.
 - 2026-06-08: complete - Phillip-Juan verified movement reads on screen (after the background-grid fix). SPEED=220 accepted. Commits 3ee13d3 + 4314aaf, merged to main.
 
-## [in-progress] B2 Build - Rig + readability spike (M2)
+## [complete] B2 Build - Rig + idle/walk (M2)
 
 Goal: build the reusable CharacterRig from the v1 human's cut parts and get a convincing idle on the down facing. De-risks top-down cutout (the #1 project risk). Branch feat/m2-rig.
 
@@ -67,4 +67,17 @@ Goal: build the reusable CharacterRig from the v1 human's cut parts and get a co
 Notes:
 - Asset spec docs/assets/human-cutout.md; component design docs/design/character-component.md; prompts docs/image-prompts.md.
 - 2 extra hands held in reserve (raw/slices part_05/part_08) - ignored for now per Phillip-Juan.
-- Completes when the character idles/walks convincingly and Phillip-Juan verifies in-game (§6).
+- 2026-06-09: complete - 2-bone knee/elbow rig; idle (breathing) + research-grounded walk (contact/passing stride, body bob, knee fold, arm swing); 3/4 depth z-order; both feet same direction (angled foot); alignment + arm/leg spacing tuned iteratively with Phillip-Juan and verified in-game. Tuning zoom dropped to 1.5x. Commits 3b5d397..ad2dc1e (+ 1c6a872 doc); merged to main.
+
+Done/learned: rigging (Skeleton via Sprite2D-cutout FK), keyframing idle + walk, animation events deferred, the FK-poser tool (tools/slice_sheet.py + pose previews) to iterate animation off-engine while blind.
+
+## [todo] B3 Build - Attack + combat beat (M4)
+
+Goal: author the attack animation (anticipation/strike/follow-through/recovery) with a hit event on the strike frame (not a timer); add the sparring opponent (reuses CharacterRig, recoloured) with hp/hit_react/defeat; one attack input.
+
+- 2026-06-09: todo (next; roadmap M4)
+
+Notes:
+- Animation discipline: hit detection fires on a named frame via an animation method/Call-Method track, never setTimeout/await.
+- Opponent reuses the rig (recolour skin), so not art-blocked.
+- Parallel art task (optional, when ready): up (back) + side facings so the character turns to face the move direction - same generate -> slice -> rig pipeline.
