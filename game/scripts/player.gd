@@ -9,3 +9,4 @@ func _physics_process(_delta: float) -> void:
 	velocity = move * SPEED
 	move_and_slide()
 	_rig.play(&"walk" if move != Vector2.ZERO else &"idle")
+	_rig.set_speed(velocity.length())
