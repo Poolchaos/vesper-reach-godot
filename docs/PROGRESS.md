@@ -2,6 +2,10 @@
 
 Append-only. Newest first. One line per entry.
 
+## 2026-06-09
+- 2026-06-09 - B2/M2 COMPLETE: 2-bone knee/elbow CharacterRig with idle (breathing) + research-grounded walk (contact/passing stride, body bob, knee fold, arm swing), 3/4 depth z-order, both feet same direction; iteratively tuned + verified in-game by Phillip-Juan. Built an off-engine FK pose-preview workflow to iterate animation while headless. Tuning zoom dropped to 1.5x. Merged feat/m2-rig to main. Next: M4 (attack + combat).
+- 2026-06-09 - M2 rig (branch feat/m2-rig): aesthetic shifted to futuristic Solo-Leveling chibi (CLAUDE.md + memory updated, was soft storybook). Generated the v1 human as an AI parts-sheet, sliced it with tools/slice_sheet.py into 6 named parts (head/torso/arms/legs; 2 extra hands reserved), assembled, built CharacterRig.tscn and wired it into the Player replacing the placeholder block. Loads clean, GUT 4/4. Limb animation (idle/walk) next; awaiting Phillip-Juan to verify the character renders right in-game.
+
 ## 2026-06-08
 - 2026-06-08 - B1/M1 COMPLETE: Phillip-Juan verified the player moves on screen (after the background-grid fix, commit 4314aaf). Merged feat/m1-movement to main. WASD/arrow/stick movement + 4-dir facing + GUT tests live. Next: M2 readability spike (rig + idle).
 - 2026-06-08 - M1 build (branch feat/m1-movement): installed GUT 9.6.0; added Facing pure-logic helper (scripts/facing.gd) with 4/4 passing unit tests; built Player (CharacterBody2D, placeholder shapes, Camera2D) with WASD/arrow/stick movement + 4-dir facing marker; instanced into test_scene; game loads clean headless. Awaiting Phillip-Juan playtest to close B1.

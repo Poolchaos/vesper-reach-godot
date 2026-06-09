@@ -5,6 +5,9 @@ legacy/
 game/.godot/
 game/android/
 
+# Regenerable slice intermediates (re-create with tools/slice_sheet.py)
+game/assets/**/raw/slices/
+
 # Exported builds
 /builds/
 
