@@ -338,58 +338,58 @@ _data = {
 &"walk": SubResource("Animation_ospmc")
 }
 
-[node name="CharacterRig" type="Node2D" unique_id=572785235]
+[node name="CharacterRig" type="Node2D" unique_id=695264557]
 scale = Vector2(0.14, 0.14)
 script = ExtResource("1_ggvnm")
 
-[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=31537750]
+[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=341456179]
 position = Vector2(133, -641)
 texture = ExtResource("2_8ahhj")
 offset = Vector2(0, 80)
 
-[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=307128886]
+[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=1244582912]
 position = Vector2(5, 126)
 texture = ExtResource("3_m6q61")
 offset = Vector2(0, 113)
 
-[node name="ThighRight" type="Sprite2D" parent="." unique_id=116651657]
+[node name="ThighRight" type="Sprite2D" parent="." unique_id=976811484]
 position = Vector2(61, -402)
 texture = ExtResource("4_c1uqr")
 offset = Vector2(0, 93)
 
-[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=393818521]
-position = Vector2(8, 162)
+[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=1025299493]
+position = Vector2(26, 162)
 texture = ExtResource("5_1l3yo")
 offset = Vector2(0, 99)
 
-[node name="Torso" type="Sprite2D" parent="." unique_id=2126275154]
+[node name="Torso" type="Sprite2D" parent="." unique_id=143704983]
 position = Vector2(0, -502)
 texture = ExtResource("6_p7ucn")
 
-[node name="ThighLeft" type="Sprite2D" parent="." unique_id=784167586]
+[node name="ThighLeft" type="Sprite2D" parent="." unique_id=792876217]
 position = Vector2(-61, -402)
 texture = ExtResource("7_boeah")
 offset = Vector2(0, 94)
 
-[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=450741945]
+[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=2132639251]
 position = Vector2(0, 162)
 texture = ExtResource("8_fvh67")
 offset = Vector2(0, 99)
 
-[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=325643959]
+[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=894112794]
 position = Vector2(-132, -641)
 texture = ExtResource("9_3nxt1")
 offset = Vector2(0, 80)
 
-[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=1634450024]
+[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=1214853983]
 position = Vector2(-6, 126)
 texture = ExtResource("10_iuy35")
 offset = Vector2(0, 113)
 
-[node name="Head" type="Sprite2D" parent="." unique_id=1128431464]
+[node name="Head" type="Sprite2D" parent="." unique_id=1695492733]
 position = Vector2(0, -601)
 texture = ExtResource("11_u8060")
 offset = Vector2(0, -173)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1666208603]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=584750410]
 libraries/ = SubResource("AnimationLibrary_0leuh")
