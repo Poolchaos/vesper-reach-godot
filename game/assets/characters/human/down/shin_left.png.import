@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7xnam8ni0s3h"
-path="res://.godot/imported/arm_left.png-368f703b5e9368e8f7fd4118a0c21def.ctex"
+uid="uid://qrnc2wqfaem3"
+path="res://.godot/imported/shin_left.png-81c893deae36e384eb394f8fdae5fc1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/human/down/arm_left.png"
-dest_files=["res://.godot/imported/arm_left.png-368f703b5e9368e8f7fd4118a0c21def.ctex"]
+source_file="res://assets/characters/human/down/shin_left.png"
+dest_files=["res://.godot/imported/shin_left.png-81c893deae36e384eb394f8fdae5fc1e.ctex"]
 
 [params]
 

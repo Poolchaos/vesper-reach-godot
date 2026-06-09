@@ -13,18 +13,18 @@ The game is a 3/4 top-down RPG: characters are seen from the front, slightly abo
 Do **down only** for now. We get it rigged + walking + reading well before drawing the back and side sets.
 
 ## Parts (down/front set)
-Six parts is enough for a readable first walk (single-piece limbs that swing). Hair can be part of the head.
+Ten parts: limbs split into two segments so they bend at the elbow/knee. Hair can be part of the head; hand baked into the forearm, foot/boot into the shin.
 
-| File | Part | Joint / pivot (where it attaches + rotates) |
-|------|------|---------------------------------------------|
+| File | Part | Joint / pivot (rotates about) |
+|------|------|-------------------------------|
 | `head.png` | head + hair + face | base of the neck |
 | `torso.png` | torso + hips (the body core) | its own center (the root part) |
-| `arm_left.png` | character's left arm (full, shoulder to hand) | left shoulder |
-| `arm_right.png` | character's right arm | right shoulder |
-| `leg_left.png` | character's left leg (full, hip to foot) | left hip |
-| `leg_right.png` | character's right leg | right hip |
+| `upper_arm_left.png` / `upper_arm_right.png` | shoulder to elbow | shoulder |
+| `forearm_left.png` / `forearm_right.png` | elbow to hand (hand included) | elbow |
+| `thigh_left.png` / `thigh_right.png` | hip to knee | hip |
+| `shin_left.png` / `shin_right.png` | knee to foot (boot included) | knee |
 
-(Finer joints - elbows, knees, separate hands/feet - are a later polish pass. Start with single-piece limbs.)
+Each segment must draw its joint ends fully (a little past the elbow/knee) so the two overlap with no gap when bent. (The first rig used single-piece arms/legs; this splits them for knee/elbow bend.)
 
 ## Export convention (important - makes assembly trivial)
 - **Transparent PNG**, one file per part.
