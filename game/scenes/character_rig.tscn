@@ -1,15 +1,15 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" path="res://scripts/character_rig.gd" id="1_ggvnm"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_left.png" id="2_8ahhj"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_left.png" id="3_m6q61"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_right.png" id="4_c1uqr"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_right.png" id="5_1l3yo"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_right.png" id="2_8ahhj"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_right.png" id="3_m6q61"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_right.png" id="4_c1uqr"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_right.png" id="5_1l3yo"]
 [ext_resource type="Texture2D" path="res://assets/characters/human/down/torso.png" id="6_p7ucn"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_left.png" id="7_boeah"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_left.png" id="8_fvh67"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_right.png" id="9_3nxt1"]
-[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_right.png" id="10_iuy35"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/thigh_left.png" id="7_boeah"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/shin_left.png" id="8_fvh67"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/upper_arm_left.png" id="9_3nxt1"]
+[ext_resource type="Texture2D" path="res://assets/characters/human/down/forearm_left.png" id="10_iuy35"]
 [ext_resource type="Texture2D" path="res://assets/characters/human/down/head.png" id="11_u8060"]
 
 [sub_resource type="Animation" id="Animation_15f58"]
@@ -338,58 +338,58 @@ _data = {
 &"walk": SubResource("Animation_ospmc")
 }
 
-[node name="CharacterRig" type="Node2D" unique_id=1628954060]
+[node name="CharacterRig" type="Node2D" unique_id=1051825080]
 scale = Vector2(0.14, 0.14)
 script = ExtResource("1_ggvnm")
 
-[node name="ThighLeft" type="Sprite2D" parent="." unique_id=815365306]
-position = Vector2(-61, -402)
-texture = ExtResource("2_8ahhj")
-offset = Vector2(0, 94)
-
-[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=555269640]
-position = Vector2(-24, 162)
-texture = ExtResource("3_m6q61")
-offset = Vector2(0, 100)
-
-[node name="ThighRight" type="Sprite2D" parent="." unique_id=1696819323]
+[node name="ThighRight" type="Sprite2D" parent="." unique_id=1758260963]
 position = Vector2(61, -402)
-texture = ExtResource("4_c1uqr")
-offset = Vector2(0, 94)
+texture = ExtResource("2_8ahhj")
+offset = Vector2(0, 93)
 
-[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=1110069855]
+[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=971193273]
 position = Vector2(24, 162)
-texture = ExtResource("5_1l3yo")
-offset = Vector2(0, 100)
+texture = ExtResource("3_m6q61")
+offset = Vector2(0, 99)
 
-[node name="Torso" type="Sprite2D" parent="." unique_id=2031126104]
+[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=437486407]
+position = Vector2(133, -641)
+texture = ExtResource("4_c1uqr")
+offset = Vector2(0, 80)
+
+[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=700952212]
+position = Vector2(5, 126)
+texture = ExtResource("5_1l3yo")
+offset = Vector2(0, 113)
+
+[node name="Torso" type="Sprite2D" parent="." unique_id=2005967049]
 position = Vector2(0, -502)
 texture = ExtResource("6_p7ucn")
 
-[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=8615530]
-position = Vector2(-132, -641)
+[node name="ThighLeft" type="Sprite2D" parent="." unique_id=728782684]
+position = Vector2(-61, -402)
 texture = ExtResource("7_boeah")
-offset = Vector2(0, 80)
+offset = Vector2(0, 93)
 
-[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=355156006]
-position = Vector2(-6, 126)
+[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=502555682]
+position = Vector2(-24, 162)
 texture = ExtResource("8_fvh67")
-offset = Vector2(0, 113)
+offset = Vector2(0, 99)
 
-[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=27188846]
-position = Vector2(133, -641)
+[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=1845081917]
+position = Vector2(-132, -641)
 texture = ExtResource("9_3nxt1")
 offset = Vector2(0, 80)
 
-[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=136070193]
-position = Vector2(5, 126)
+[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=735424327]
+position = Vector2(-6, 126)
 texture = ExtResource("10_iuy35")
 offset = Vector2(0, 113)
 
-[node name="Head" type="Sprite2D" parent="." unique_id=1290927891]
+[node name="Head" type="Sprite2D" parent="." unique_id=542102215]
 position = Vector2(0, -601)
 texture = ExtResource("11_u8060")
 offset = Vector2(0, -173)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1436023922]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=359688857]
 libraries/ = SubResource("AnimationLibrary_0leuh")
