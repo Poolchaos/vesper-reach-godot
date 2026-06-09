@@ -57,13 +57,14 @@ Goal: top-down movement + input (KB+M/controller) with a placeholder visual, 4-d
 - 2026-06-08: in-progress - design doc confirmed; GUT 9.6.0 installed; Facing logic + Player + movement built; facing tests 4/4 green.
 - 2026-06-08: complete - Phillip-Juan verified movement reads on screen (after the background-grid fix). SPEED=220 accepted. Commits 3ee13d3 + 4314aaf, merged to main.
 
-## [todo] B2 Build - Readability spike (M2)
+## [in-progress] B2 Build - Rig + readability spike (M2)
 
-Goal: cut human.png into rig parts, build the Skeleton2D rig, and get a convincing idle on the hardest facing (front/down). De-risks top-down cutout (the #1 project risk).
+Goal: build the reusable CharacterRig from the v1 human's cut parts and get a convincing idle on the down facing. De-risks top-down cutout (the #1 project risk). Branch feat/m2-rig.
 
-- 2026-06-08: todo (next)
+- 2026-06-08: todo
+- 2026-06-09: in-progress - aesthetic shifted to futuristic Solo-Leveling chibi (CLAUDE.md); v1 human generated as an AI parts-sheet, sliced (tools/slice_sheet.py) into 6 named parts, assembled, CharacterRig.tscn built and wired into the Player (placeholder block removed). Loads clean, GUT 4/4. Idle + walk animation next.
 
 Notes:
-- Asset-spec gate: write docs/assets/human-cutout.md before any rig/animation work.
-- Needs human.png cut into separate part images (art task) - decide approach with Phillip-Juan (manual GIMP/Krita, AI-generated parts, or a programmatic slice).
-- Learning steps 0-2 (docs/design/animation-learning-path.md).
+- Asset spec docs/assets/human-cutout.md; component design docs/design/character-component.md; prompts docs/image-prompts.md.
+- 2 extra hands held in reserve (raw/slices part_05/part_08) - ignored for now per Phillip-Juan.
+- Completes when the character idles/walks convincingly and Phillip-Juan verifies in-game (§6).

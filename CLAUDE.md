@@ -26,9 +26,9 @@ v1 is **Human race only** and the **smallest playable, animated slice**: one chi
 
 ## Locked aesthetic
 
-Inherits the Vesper Reach visual identity. **Locked:** chibi proportions (large head, ~1:2 head-to-body), painted soft cel-shading with visible material texture, soft/warm palette (no neon), transparent or implied-depth backgrounds for character art. Reference: `legacy/vesper-reach/src/assets/characters/races/human.png` (the v1 character look; a static painted portrait, the animated sprite derives from it).
+Inherits the Vesper Reach world + races, reinterpreted in a **sleek futuristic dark-fantasy chibi** look inspired by Solo Leveling (treatment over the same fantasy world, not a sci-fi setting). **Locked:** chibi proportions (large head, ~1:2 head-to-body); sharp clean linework with thick bold black outlines; high-contrast cel-shading; cool/dark palette with glowing magical accents (polished system-RPG feel); sleek modern-fantasy clothing/gear; dramatic edge lighting. Full style anchor + generation prompts: [docs/image-prompts.md](docs/image-prompts.md).
 
-**This is NOT:** pixel art, AAA realism, anime hyper-detail, or low-poly placeholder. Style is "hand-painted chibi storybook."
+**This is NOT:** pixel art, AAA realism, low-poly, or the old soft-pastel storybook look. (Aesthetic updated 2026-06-08 from "soft warm storybook" to the Solo-Leveling-influenced direction per Phillip-Juan.)
 
 **Locked:** render technique = 2D skeletal/cutout, 4-dir for v1 (ADR-0002); engine = Godot 4 + built-in bones (ADR-0001). **Still open:** world tileset style.
 
