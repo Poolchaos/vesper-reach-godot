@@ -1,20 +1,23 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="PackedScene" path="res://scenes/character_rig.tscn" id="2_qhqgy"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_qhqgy"]
+[ext_resource type="PackedScene" path="res://scenes/character_rig.tscn" id="2_dqkch"]
+[ext_resource type="Script" path="res://scripts/character_rig.gd" id="3_qlg0r"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
-size = Vector2(34, 70)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuyoq"]
+size = Vector2(40, 100)
 
-[node name="Player" type="CharacterBody2D" unique_id=1707418726]
-script = ExtResource("1_g2els")
+[node name="Player" type="CharacterBody2D" unique_id=489481248]
+script = ExtResource("1_qhqgy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1917936123]
-position = Vector2(0, -35)
-shape = SubResource("RectangleShape2D_dqkch")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1471835305]
+position = Vector2(0, -50)
+shape = SubResource("RectangleShape2D_tuyoq")
 
-[node name="Visual" type="Node2D" parent="." unique_id=1660423117 instance=ExtResource("2_qhqgy")]
-scale = Vector2(0.16, 0.16)
+[node name="Visual" type="Node2D" parent="." unique_id=588277955 instance=ExtResource("2_dqkch")]
+scale = Vector2(0.14, 0.14)
+script = ExtResource("3_qlg0r")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1141892898]
-position = Vector2(0, -40)
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1783993209]
+position = Vector2(0, -65)
+zoom = Vector2(2.5, 2.5)
