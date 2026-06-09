@@ -25,7 +25,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.2, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -502), Vector2(0, -522), Vector2(0, -502)]
+"values": [Vector2(0, -502), Vector2(0, -516), Vector2(0, -502)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -37,7 +37,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 1.2, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -601), Vector2(0, -621), Vector2(0, -601)]
+"values": [Vector2(0, -601), Vector2(0, -615), Vector2(0, -601)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -49,7 +49,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 1.2, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(-132, -641), Vector2(-132, -661), Vector2(-132, -641)]
+"values": [Vector2(-132, -641), Vector2(-132, -655), Vector2(-132, -641)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -61,7 +61,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 1.2, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(133, -641), Vector2(133, -661), Vector2(133, -641)]
+"values": [Vector2(133, -641), Vector2(133, -655), Vector2(133, -641)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -173,7 +173,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -502), Vector2(0, -512), Vector2(0, -502), Vector2(0, -512), Vector2(0, -502)]
+"values": [Vector2(0, -502), Vector2(0, -510), Vector2(0, -502), Vector2(0, -510), Vector2(0, -502)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -185,7 +185,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -601), Vector2(0, -611), Vector2(0, -601), Vector2(0, -611), Vector2(0, -601)]
+"values": [Vector2(0, -601), Vector2(0, -609), Vector2(0, -601), Vector2(0, -609), Vector2(0, -601)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -197,7 +197,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-132, -641), Vector2(-132, -651), Vector2(-132, -641), Vector2(-132, -651), Vector2(-132, -641)]
+"values": [Vector2(-132, -641), Vector2(-132, -649), Vector2(-132, -641), Vector2(-132, -649), Vector2(-132, -641)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -209,7 +209,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(133, -641), Vector2(133, -651), Vector2(133, -641), Vector2(133, -651), Vector2(133, -641)]
+"values": [Vector2(133, -641), Vector2(133, -649), Vector2(133, -641), Vector2(133, -649), Vector2(133, -641)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -221,7 +221,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.18, 0.0, -0.18, 0.0]
+"values": [0.0, 0.06, 0.0, -0.02, 0.0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -233,7 +233,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, -0.18, 0.0, 0.18, 0.0]
+"values": [0.0, -0.02, 0.0, 0.06, 0.0]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -245,7 +245,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.3, 0.0, 0.05, 0.0]
+"values": [0.0, 0.5, 0.0, 0.0, 0.0]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -257,7 +257,7 @@ tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.05, 0.0, 0.3, 0.0]
+"values": [0.0, 0.0, 0.0, 0.5, 0.0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -269,7 +269,7 @@ tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, -0.16, 0.0, 0.16, 0.0]
+"values": [0.0, -0.14, 0.0, 0.14, 0.0]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -281,7 +281,31 @@ tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.16, 0.0, -0.16, 0.0]
+"values": [0.0, 0.14, 0.0, -0.14, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("UpperArmLeft/ForearmLeft:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1, 0.0, 0.2, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("UpperArmRight/ForearmRight:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.2, 0.0, 0.1, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0leuh"]
@@ -290,58 +314,58 @@ _data = {
 &"walk": SubResource("Animation_ospmc")
 }
 
-[node name="CharacterRig" type="Node2D" unique_id=924889782]
+[node name="CharacterRig" type="Node2D" unique_id=1374350304]
 scale = Vector2(0.14, 0.14)
 script = ExtResource("1_ggvnm")
 
-[node name="ThighLeft" type="Sprite2D" parent="." unique_id=663169957]
-position = Vector2(-61, -394)
+[node name="ThighLeft" type="Sprite2D" parent="." unique_id=86947683]
+position = Vector2(-61, -402)
 texture = ExtResource("2_8ahhj")
 offset = Vector2(0, 94)
 
-[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=221090564]
+[node name="ShinLeft" type="Sprite2D" parent="ThighLeft" unique_id=776738557]
 position = Vector2(-24, 162)
 texture = ExtResource("3_m6q61")
 offset = Vector2(0, 100)
 
-[node name="ThighRight" type="Sprite2D" parent="." unique_id=1951077767]
-position = Vector2(62, -394)
+[node name="ThighRight" type="Sprite2D" parent="." unique_id=1715990199]
+position = Vector2(62, -402)
 texture = ExtResource("4_c1uqr")
 offset = Vector2(0, 93)
 
-[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=324713226]
+[node name="ShinRight" type="Sprite2D" parent="ThighRight" unique_id=30557128]
 position = Vector2(16, 160)
 texture = ExtResource("5_1l3yo")
 offset = Vector2(0, 99)
 
-[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=1511401610]
+[node name="UpperArmLeft" type="Sprite2D" parent="." unique_id=363910272]
 position = Vector2(-132, -641)
 texture = ExtResource("6_p7ucn")
 offset = Vector2(0, 80)
 
-[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=716767994]
+[node name="ForearmLeft" type="Sprite2D" parent="UpperArmLeft" unique_id=688840768]
 position = Vector2(-6, 126)
 texture = ExtResource("7_boeah")
 offset = Vector2(0, 113)
 
-[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=1814600870]
+[node name="UpperArmRight" type="Sprite2D" parent="." unique_id=1347957521]
 position = Vector2(133, -641)
 texture = ExtResource("8_fvh67")
 offset = Vector2(0, 80)
 
-[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=1858798235]
+[node name="ForearmRight" type="Sprite2D" parent="UpperArmRight" unique_id=2069663226]
 position = Vector2(5, 126)
 texture = ExtResource("9_3nxt1")
 offset = Vector2(0, 113)
 
-[node name="Torso" type="Sprite2D" parent="." unique_id=758120484]
+[node name="Torso" type="Sprite2D" parent="." unique_id=67807302]
 position = Vector2(0, -502)
 texture = ExtResource("10_iuy35")
 
-[node name="Head" type="Sprite2D" parent="." unique_id=1106271036]
+[node name="Head" type="Sprite2D" parent="." unique_id=1685218763]
 position = Vector2(0, -601)
 texture = ExtResource("11_u8060")
 offset = Vector2(0, -173)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=55840040]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1635465570]
 libraries/ = SubResource("AnimationLibrary_0leuh")
