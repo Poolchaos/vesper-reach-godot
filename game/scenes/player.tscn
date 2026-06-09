@@ -7,17 +7,17 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tuyoq"]
 size = Vector2(40, 100)
 
-[node name="Player" type="CharacterBody2D" unique_id=299521989]
+[node name="Player" type="CharacterBody2D" unique_id=961273235]
 script = ExtResource("1_qhqgy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652978495]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1757558390]
 position = Vector2(0, -50)
 shape = SubResource("RectangleShape2D_tuyoq")
 
-[node name="Visual" type="Node2D" parent="." unique_id=1992873147 instance=ExtResource("2_dqkch")]
+[node name="Visual" type="Node2D" parent="." unique_id=924889782 instance=ExtResource("2_dqkch")]
 scale = Vector2(0.14, 0.14)
 script = ExtResource("3_qlg0r")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=637791951]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=800681563]
 position = Vector2(0, -65)
 zoom = Vector2(2.5, 2.5)
